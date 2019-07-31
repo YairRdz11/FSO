@@ -1,23 +1,58 @@
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-    <div class="container">
-        <a class="navbar-brand js-scroll-trigger" routerLink="/home" style="font-family: 'Chela One', cursive;">Foto Studio Olivo</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menú
-        <i class="fas fa-bars"></i>
-      </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#about">Paquetes</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#projects">Galería</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" routerLink="/contact">Contacto</a>
-                </li>
-            </ul>
-        </div>
-    </div>
+<!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg fixed-top scrolling-navbar">
+  <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      <span class="icon-menu"></span>
+      <span class="icon-menu"></span>
+      <span class="icon-menu"></span>
+    </button>
+          <a href="index.html" class="navbar-brand"><img src="assets/img/logo.png" alt=""></a>
+      </div>
+      <div class="collapse navbar-collapse" id="main-navbar">
+          <ul class="navbar-nav mr-auto w-100 justify-content-end">
+              <li class="nav-item active">
+                  <a class="nav-link" href="#header-wrap">
+                      Inicio
+                  </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#gallery">
+                      Galería
+                  </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#pricing">
+                      Paquetes
+                  </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#contact">
+                      Contacto
+                  </a>
+              </li>
+          </ul>
+      </div>
+  </div>
+
+  <!-- Mobile Menu Start -->
+  <ul class="mobile-menu">
+      <li>
+          <a class="page-scrool" href="#header-wrap">Inicio</a>
+      </li>
+      <li>
+          <a class="page-scroll" href="#gallery">Gallería</a>
+      </li>
+      <li>
+          <a class="page-scroll" href="#pricing">Paquetes</a>
+      </li>
+      <li>
+          <a class="page-scroll" href="#contact">Contacto</a>
+      </li>
+  </ul>
+  <!-- Mobile Menu End -->
+
 </nav>
+<!-- Navbar End -->
