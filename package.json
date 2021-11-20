@@ -4,15 +4,14 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "node server.js",
-    "build": "ng build --prod",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e",
-    "postinstall": "ng build --aot --prod"
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test"
   },
   "private": true,
   "dependencies": {
+    "@angular-devkit/build-angular": "^13.0.3",
     "@angular/animations": "^13.0.2",
     "@angular/cli": "^13.0.3",
     "@angular/common": "^13.0.2",
@@ -33,26 +32,14 @@
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^13.0.3",
     "@angular/language-service": "^13.0.2",
     "@types/jasmine": "~2.8.3",
-    "@types/jasminewd2": "~2.0.2",
     "@types/node": "~6.0.60",
-    "codelyzer": "^5.0.1",
-    "enhanced-resolve": "^3.3.0",
     "jasmine-core": "~2.8.0",
-    "jasmine-spec-reporter": "~4.2.1",
     "karma": "^6.3.9",
     "karma-chrome-launcher": "~2.2.0",
     "karma-coverage-istanbul-reporter": "^1.2.1",
     "karma-jasmine": "~1.1.0",
-    "karma-jasmine-html-reporter": "^0.2.2",
-    "protractor": "^5.4.4",
-    "ts-node": "~4.1.0",
-    "tslint": "~5.9.1"
-  },
-  "engines": {
-    "node": "10.16.0",
-    "npm": "6.9.0"
+    "karma-jasmine-html-reporter": "^0.2.2"
   }
 }

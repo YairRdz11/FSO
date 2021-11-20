@@ -27,8 +27,7 @@ import { MenuComponent } from './components/shared/menu/menu.component';
     MenuComponent
   ],
   imports: [
-    BrowserModule,
-    //app_routing
+    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]
